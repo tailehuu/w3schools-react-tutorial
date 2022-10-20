@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import Car from "./components/Car";
+import Football from "./components/Football"
+import Garage from "./components/Garage";
+import MyForm from "./components/MyForm";
 
 function App() {
+  const cars = [
+    { id: 1, name: "Audi" },
+    { id: 2, name: "BMW" },
+    { id: 3, name: "Toyota" }
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Car brand="Ford" />
+      <Football />
+      <Garage cars={cars} />
+      <Garage cars={[]} />
+      <MyForm />
     </div>
   );
 }

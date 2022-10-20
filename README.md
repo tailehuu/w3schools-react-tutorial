@@ -68,3 +68,71 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Take away
+
+- npm vs npx
+- JSX
+
+### ES6
+
+- Classes
+  - constructor
+- Arrow Functions
+- Variables
+  - var, let, const
+  - scope: global, function and block
+- Array
+- Modules
+  - export
+  - import
+- JSX
+  - stands for JavaScript XML
+  - allow to write HTML in React
+  - fragment: `<></>`
+  - must be closed
+  - class => className
+
+### React
+
+- Components
+  - like function but return HTML
+  - type of component
+    - Class
+      - extends React.Components
+      - requires a `render()` method
+    - Function
+  - props
+    - are arguments passed into React components
+    - are passed to components via HTML attributes
+    - are read-only
+  - events
+    - camel case,ie: `onClick`
+  - conditionals
+    - `if`
+    - `&&`
+  - list
+    - `.map`
+    - keys: id attribute
+  - Form
+    - `<form onSubmit=...`
+    - `useState`
+  - Router
+    - 
+  - state
+    - built-in object
+    - when `state` object changes, the component re-renders 
+  - lifecycle of components
+    - mounting
+      - `constructor()`
+      - `getDerivedStateFromProps()`
+      - `render()`
+      - `componentDidMount()`
+    - updating
+      - `getDerivedStateFromProps()`
+      - `shouldComponentUpdate()`
+      - `render()`
+      - `getSnapshotBeforeUpdate()`
+      - `componentDidUpdate()`
+    - unmounting
+      - `componentWillUnmount()`
