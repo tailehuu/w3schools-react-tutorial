@@ -151,6 +151,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 #### React Hooks
 
 - What is a hook?
+  - allow function components to have access to `state`
   - added to React in version 16.8
   - will not work in class components
   - rules
@@ -160,3 +161,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - `useState` hook
   - manage state of components
   - set default state & method when state was changed
+- `useEffect` hook
+  - perform side effects in our components
+  - for example: fetching data, directly update the DOM or timers
+
+  ```javascript
+  /* use case 1 */
+  useEffect(() => {
+    /* add your code here */
+  })
+  
+  /* use case 2 */
+  useEffect(() => {
+    /* add your code here */
+  }, [])
+  
+  /* use case 3 */
+  useEffect(() => {
+    /* add your code here */
+  }, [props, state])
+  
+  /* use case 4 */
+  useEffect(() => {
+    /* add your code here */
+  
+    return () => {
+      /* clean up code */
+    }
+  })
+  ```
+- `useContext` hook
+  - React Context is a way to manage state globally
+  - used with `useState` hook to share state between deeply nested components
+  - term: `props drilling` => pass the state as `props` through each nested components
