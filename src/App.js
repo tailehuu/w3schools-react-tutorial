@@ -1,24 +1,23 @@
 import './css/App.css';
-import Car from "./components/Car";
-import Football from "./components/Football"
-import Garage from "./components/Garage";
-import MyForm from "./components/MyForm";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
 function App() {
-  const cars = [
-    { id: 1, name: "Audi" },
-    { id: 2, name: "BMW" },
-    { id: 3, name: "Toyota" }
-  ]
-
   return (
-    <div className="App">
-      <Car brand="Ford" />
-      <Football />
-      <Garage cars={cars} />
-      <Garage cars={[]} />
-      <MyForm />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
