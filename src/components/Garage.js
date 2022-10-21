@@ -1,4 +1,6 @@
 function Garage(props) {
+  console.log('render Garage')
+
   const cars = props.cars
 
   return (

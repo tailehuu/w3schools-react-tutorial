@@ -1,4 +1,6 @@
 function Football() {
+  console.log('render Football')
+
   const shoot = () => {
     alert("Great shot!")
   }

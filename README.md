@@ -122,7 +122,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
       - `npm i -D react-router-dom`
   - state
     - built-in object
-    - when `state` object changes, the component re-renders 
+    - when `state` object changes, the component re-renders
+  - `memo`
+    - wrap components to avoid re-render
+  - Styling React using CSS
+    - inline styling, `style={{ color: "red" }}`
+      - camel case: `backgroundColor` instead of `background-color`
+    - javascript object
+    - CSS stylesheet
+    - CSS module
   - lifecycle of components
     - mounting
       - `constructor()`
