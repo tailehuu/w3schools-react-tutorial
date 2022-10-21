@@ -1,3 +1,5 @@
+import '../css/garage.scss'
+
 function Garage(props) {
   console.log('render Garage')
 

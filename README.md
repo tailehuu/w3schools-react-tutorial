@@ -95,6 +95,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### React
 
+#### React Tutorial
+
 - Components
   - like function but return HTML
   - type of component
@@ -145,3 +147,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
       - `componentDidUpdate()`
     - unmounting
       - `componentWillUnmount()`
+
+#### React Hooks
+
+- What is a hook?
+  - added to React in version 16.8
+  - will not work in class components
+  - rules
+    - only be called inside react function components
+    - only be called at the top level of a component
+    - can nod be conditional
+- `useState` hook
+  - manage state of components
+  - set default state & method when state was changed
