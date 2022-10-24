@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "../css/car.module.css"
 
+// class component
 class Car extends React.Component {
   constructor(props) {
     super(props)

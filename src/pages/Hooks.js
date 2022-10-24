@@ -1,6 +1,8 @@
 import HookRef from "../components/HookRef";
 import TodosReducer from "../components/TodosReducer";
 import TodoCallback from "../components/TodoCallback";
+import TodosMemo from "../components/TodosMemo";
+import CustomHook from "../components/CustomHook";
 
 const Hooks = () => {
   return (
@@ -12,6 +14,10 @@ const Hooks = () => {
       <TodosReducer />
 
       <TodoCallback />
+
+      <TodosMemo />
+
+      <CustomHook />
     </>
   )
 }
