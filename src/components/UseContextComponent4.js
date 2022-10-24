@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import UserContext from "./UserContext";
+import UserContext from "../hooks/UserContext";
 
 function UseContextComponent4() {
   const data = useContext(UserContext)
-  console.log(data)
 
   return (
     <>

@@ -1,5 +1,5 @@
 import { useState, createContext, useContext } from "react";
-import UserContext from "./UserContext";
+import UserContext from "../hooks/UserContext";
 import UseContextComponent2 from "./UseContextComponent2";
 
 function UseContextComponent1() {
@@ -7,7 +7,7 @@ function UseContextComponent1() {
   const data = {
     name: "Tai LE",
     email: "lhtai181@gmail.com",
-    phone: "123456",
+    phone: "0938 471 436",
     user: user
   }
 
