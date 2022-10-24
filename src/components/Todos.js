@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 const Todos = ({ todos }) => {
-  console.log("child render")
+  console.log("render Todos")
   console.log(todos)
 
   return (
